@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <span class="fa fa-times" onclick="hideMenu()"></span>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html" target="_blank">ABOUT</a></li>
+                    <li><a href="course.html" target="_blank">COURSE</a></li>
+                    <li><a href="Blog.html" target="_blank">BLOG</a></li>
+                    <li><a href="contact.html" target="_blank">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="fa fa-bars" onclick="showMenu()"></span>
+        </nav>
+        <h1>Contact Us</h1>  
+    </section>
+
+    <!--Contact Us start-->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9065184947854!2d79.27370231477002!3d12.913729490893855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad36645ec2586d%3A0xd3bd427757d7010e!2sMasjid%20E%20Makka!5e0!3m2!1sen!2sin!4v1633255872190!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <span class="fa fa-home"></span>
+                        <span>
+                            <h5>406, Hajipet 1st Street</h5>
+                            <p>Melvisharam, Tamilnadu, IN</p>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="fa fa-phone"></span>
+                        <span>
+                            <h5>+91 7867886816</h5>
+                            <p>Monday to Saturday, 10AM to 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="fa fa-envelope-o"></span>
+                        <span>
+                            <h5>risudeveloper@gmail.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+
+                    <div class="contact-col">
+                        <form action="form-handler.php" method="post">
+                            <input type="text" name="name" placeholder="Enter Your Name">
+                            <input type="email" name="email" placeholder="Enter Email Address">
+                            <input type="text" name="subject" placeholder="Enter Your Subject">
+                            <textarea rows="8" name="message" placeholder="Messaage"></textarea>
+                            <button type="submit" class="hero-btn red-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    <!--Contact Us finish-->
+    
+   
+    <!--footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt alias perferendis hic provident. Eum id a iure.<br> eveniet quo commodi fugit culpa delectus, earum necessitatibus minus enim laboriosam voluptatem eligendi?</p>
+
+        <div class="icons">
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-twitter"></span>
+            <span class="fa fa-instagram"></span>
+            <span class="fa fa-linkedin"></span>
+        </div>
+        <p>Made with <span class="fa fa-heart-o"></span> by Risu_developer</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
